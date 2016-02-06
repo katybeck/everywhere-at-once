@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*
+
+name: Thesis Site
+designer: Movable Type
+designer_url: http://www.movabletype.org
+layouts: layout-wtt
+
+A Theme using blueprint CSS to create a grid.
+
+*/
+
+/*-------- general styles ---------*/
+body {
+	background: url(../../../images/repeating-brown-paper-more-desaturated.gif) 0 0 repeat;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 76%;
+	line-height: 1.5em;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.container {
+	width: 1100px;
+	height: 600px;
+	overflow: visible;
+	margin-left: 35px;
+	margin-right: 0px;
+}
+
+#index .container {
+	background: url(../../../images/title-with-dots.png) 0px -20px no-repeat;
+}
+
+#category .container, #project .container {
+	/* background: url(/images/title-only.png) 0 20px no-repeat; */
+}
+
+a {
+	color: #FFFFFF;
+}
+
+#header img {
+	margin-top: 39px;
+}
+
+#index #header img {
+	display: none;
+}
+
+#header h1 {
+	font-size: .5em;
+	font-weight: bold;
+	line-height: .6em;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	color: #FF9900;
+	margin-top: 10px;
+}
+
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	color: black;
+	/*color: #595A3C;*/
+	/*color: #998E7D;*/
+	border-bottom: thin solid black;
+	padding-bottom: 5px;
+}
+
+/* ------ big page elements defined ------------ */
+#index {}
+#project {}
+#category {}
+
+#header {
+	border-bottom: 0 solid #FF9900;
+	margin-top: 0px;
+	background: transparent;
+	height: 25px;
+}
+
+#footer {}
+
+#project #content,
+#category #content {
+	margin-top: 100px;
+	/* border-top: thin solid #FF9900; */
+}
+
+#project #content .block .content,
+#category #content .block .content {
+	/* border: thin solid white; */
+	margin-top: 0px;
+}
+
+
+/*-------- alterations for the project pages --------*/
+#project .block .titlebar,
+#category .block .titlebar {
+	margin-top: 0px;
+}
+
+#project .block .titlebar .subhead,
+#category .block .titlebar .subhead {
+	padding-top: 0px;
+}
+
+#project .block .titlebar .title,
+#category .block .titlebar .title {
+	font-size: 1.8em;
+	margin-top:0px;
+}
+
+#index .subhead p, 
+#project .subhead p,
+#category .subhead p {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	font-size: 1em;
+	line-height: 1em;
+	text-align: right;
+	margin-right: 5px;
+}
+
+#index #content, 
+#project #content,
+#category #content {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+}
+
+#index #content .block .subhead, 
+#project #content .block .subhead,
+#category #content .block .subhead,
+#project #content .block .subhead.title {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-top: 5px;
+}
+
+#index #content .block .subhead.intro, 
+#project #content .block .subhead.intro,
+#category #content .block .subhead.intro,
+#project #content .block .subhead.title {
+	margin-top: 19px;
+}
+
+#index #content .block .content, 
+#project #content .block .content,
+#category #content .block .content {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	letter-spacing: .01em;
+	margin: 0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0px;
+	color: #C8B9A3;
+}
+
+#content .block .content div {
+	position: relative;
+}
+
+#content .block .content div p {
+	font-size: .7em;
+	line-height: 1.2em;
+	position: absolute;
+	left: -150px;
+	bottom: 0;
+	width: 140px;
+	text-align: right;
+}
+
+#content .block .content div img {
+	width: 470px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#index #content .block p.intro, 
+#project #content .block p.intro,
+#category #content .block p.intro,
+#project #content .block p.title {
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+
+
+/*---- menu styles -----*/
+#menu a {
+	/*color: #A4A184;*/
+	color: #C8B9A3;
+}
+
+#menu a:hover {
+	color: #FFCC00;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu li {
+	list-style-type:none;
+}
+
+#project #menu .sidebarthumbs {
+	margin-top: 30px;
+}
+
+#project #menu .sidebarthumb {
+	margin-bottom: 10px;
+}
+
+#project #menu .sidebarthumb.active {
+	border: thin solid #FF9900;
+	margin-right: 8px;
+}
+
+#project #menu .sidebarthumb.active img {
+	margin: 2px;
+	width: inherit;
+}
+
+/*---------- footer styles -------------*/
+#footer {
+	border-top: thin solid black;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#footer p {
+	margin: 20px;
+}
+
+
+/* --------- Main index styles ------------ */
+
+#projects {
+	margin-top: 0px;
+	height: 250px;
+	width: 4483px;
+	position: relative;
+	border: 0 solid black;
+	/* background: url(/images/draggable.png) 25px 180px no-repeat; */
+}
+
+#projects.chronology {
+	border: 0 solid white;
+	margin-top: 210px;
+	left: 100px;
+	/* background: url(/images/single-dot-arrow-right.png) 0px 150px no-repeat; */
+	background: url(../../../images/label-chronology.png) 0px 150px no-repeat;
+}
+
+#projects.chronology img.label {
+	top: -7px;
+	left: 0px;
+}
+
+#projects.media img.label {
+	top: -7px;
+	left: 0px;
+}
+
+#projects.media {
+	border: 0 solid white;
+	margin-top: -30px;
+	left: -3200px;
+	/* background: url(/images/single-dot-arrow-right.png) 0px 150px no-repeat; */
+	background: url(../../../images/label-media.png) right 150px no-repeat;
+}
+
+.draggable-top {
+	height: 150px;
+	width: 4250px;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: thin solid white;
+	margin-left: 90px;
+}
+
+.draggable-bottom {
+	height: 50px;
+	width: 4400px;
+	position: relative;
+	top: 8px;
+	color: white;
+	font-size: .8em;
+	line-height: 1.3em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	margin-left: 90px;
+}
+
+.draggable-top .label p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1em;
+	font-style: italic;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	text-align: right;
+	float: right;
+	width: 65px;
+}
+
+.placeholder {
+	background: #FFFFFF;
+	height: auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.placeholder img, .placeholder p {
+	position: absolute;
+	bottom: -150px;
+	color: #FFFFFF;
+}
+
+.placeholder p {
+	bottom: -150px;
+}
+
+.draggable-bottom a {
+	text-decoration: none;
+}
+
+.span-1 img, .span-2 img, .span-3 img, .span-4 img, .span-5 img, .span-6 img, .span-7 img, .span-8 img {
+	width: inherit;
+}
+
+/*--------- Category Page Styles ----------- */
+#category #content .category-quote {
+	font-size: 1.9em;
+	line-height: 1.5em;
+}
+
+#category #content .category-quote p {
+	margin: 0px 5px 0px 0px;
+	text-align: center;
+	color: #FF9900;
+}
+
+#category #content .category-quote p.attribution {
+	font-size: .6em;
+	font-style: italic;
+	text-align: center;
+}
+
+#category #content .category-container.span-3 {
+	margin-bottom: 20px;
+	margin-right: 7.5px;
+	height: 160px;
+	font-size: .8em;
+	line-height: 1em;
+
+}
+
+#category #content .category-container img {
+	width: 105px;
+	margin: 0 0 5px 0;
+}
+
+
+/*------ header styles -------*/
+#header #header-menu {
+	text-align: left;
+	margin-top: 45px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: .8em;
+}
+
+#header #header-menu a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+#header #header-menu a:hover {
+	color: gray;
+}
+
+#header #header-menu ul {
+	margin: 0px;
+}
+#header #header-menu ul li {
+	display: inline;
+	margin-right: 15px;
+}
